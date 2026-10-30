@@ -1,0 +1,19 @@
+# Environments
+.venv/
+.uv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Saved models and Keras Tuner results
+models/
+tuner/
+
+# Editors and macOS
+.vscode/
+.DS_Store
