@@ -1,0 +1,71 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+$navy: #23364D;
+$blue: #66849A;
+$teal: #72A99A;
+$ochre: #D6AD67;
+$grey: #78828C;
+$rule: #D9DDDC;
+
+$body-bg: #F7F8F6;
+$body-color: #252B32;
+$link-color: $blue;
+$font-family-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
+$presentation-font-size-root: 28px;
+$presentation-heading-font: "Inter", "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-color: $navy;
+$presentation-heading-font-weight: 700;
+$presentation-heading-text-transform: none;
+$presentation-heading-line-height: 1.15;
+$presentation-slide-text-align: left;
+
+/*-- scss:rules --*/
+.reveal { font-weight: 400; letter-spacing: 0; }
+
+.reveal h2 { font-size: 1.45em; letter-spacing: -0.01em; margin: 0 0 .9em 0; max-width: 92%; }
+.reveal h2::after { content: ""; display: block; width: 48px; height: 4px; background: $teal; margin-top: .45em; }
+
+.reveal #title-slide { text-align: left; }
+.reveal #title-slide h1 { font-size: 2.2em; letter-spacing: -0.02em; max-width: 85%; }
+.reveal #title-slide .subtitle { font-size: 1.05em; font-weight: 300; color: $grey; margin-top: .6em; }
+.reveal #title-slide .quarto-title-authors { display: block; margin-top: 2.5em; }
+.reveal #title-slide .quarto-title-author-name { font-size: .6em; font-weight: 500; color: $blue; letter-spacing: .08em; text-align: left; }
+.reveal #title-slide .author { font-size: .6em; font-weight: 500; color: $blue; letter-spacing: .08em; margin-top: 2.5em; }
+
+.reveal p { margin: .4em 0; line-height: 1.4; }
+.reveal ul { list-style: none; margin: 0; padding: 0; }
+.reveal ul li { margin: .55em 0; padding-left: 1em; border-left: 3px solid $teal; line-height: 1.35; }
+.reveal strong { font-weight: 600; color: $navy; }
+.reveal .slide-number { background: transparent; color: $grey; font-size: .55em; }
+
+.reveal .quarto-figure { margin: 0; }
+.reveal img, .reveal .cell-output-display img { max-height: 70vh; width: auto; max-width: 100%; margin: 0 auto; display: block; }
+
+.reveal .note { font-size: .6em; color: $grey; margin-top: .8em; line-height: 1.4; }
+.reveal .note strong { color: $grey; font-weight: 600; }
+
+.reveal .metrics { display: flex; gap: 2.2em; margin: 2em 0 2em; }
+.reveal .metric { flex: 1; padding-top: .6em; border-top: 3px solid $rule; }
+.reveal .metric.accent { border-top-color: $ochre; }
+.reveal .metric .num { font-size: 4.2em; font-weight: 700; color: $navy; line-height: 1; letter-spacing: -0.03em; }
+.reveal .metric .label { font-size: .75em; color: $grey; margin-top: .5em; }
+
+.reveal .two-col { display: flex; gap: 3em; }
+.reveal .two-col > .col { flex: 1; }
+.reveal .two-col .col-title { display: block; font-size: .75em; font-weight: 600; color: $grey; margin: 0 0 1em 0; }
+.reveal .two-col ul li { font-size: .85em; }
+
+.reveal .flow { display: flex; align-items: stretch; gap: .6em; margin: 2em 0 2.4em; }
+.reveal .flow .step { flex: 1; padding: 1.3em 1.2em; background: #fff; border-top: 4px solid $rule; }
+.reveal .flow .step.frozen { border-top-color: $blue; }
+.reveal .flow .step.trained { border-top-color: $teal; }
+.reveal .flow .step .t { font-weight: 600; color: $navy; font-size: .85em; }
+.reveal .flow .step .d { color: $grey; font-size: .65em; margin-top: .3em; line-height: 1.35; }
+.reveal .flow .arrow { align-self: center; color: $grey; font-size: 1.1em; }
+
+.reveal .variants { display: flex; gap: 2.2em; }
+.reveal .variants > div { flex: 1; font-size: .7em; line-height: 1.4; padding-left: .9em; border-left: 3px solid $teal; }
+.reveal .variants .k { font-weight: 600; color: $navy; display: block; }
+
+.reveal .cta { display: inline-block; margin-top: 2em; padding: .7em 1.4em; font-size: 1.6em; font-weight: 600; color: #F7F8F6 !important; background: #23364D; border-radius: 4px; text-decoration: none; border-bottom: 3px solid #72A99A; }
