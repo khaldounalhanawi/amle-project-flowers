@@ -1,0 +1,18 @@
+project:
+  render:
+    - presentation.ipynb
+
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    transition: none
+    slide-number: true
+    center: false
+    embed-resources: true
+    width: 1280
+    height: 720
+    margin: 0.06
+
+execute:
+  echo: false
+  warning: false

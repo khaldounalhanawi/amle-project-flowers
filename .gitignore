@@ -11,9 +11,12 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Saved models and Keras Tuner results
-models/
+# models/
 tuner/
 
 # Editors and macOS
 .vscode/
 .DS_Store
+
+/.quarto/
+**/*.quarto_ipynb
